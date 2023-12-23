@@ -18,13 +18,13 @@ The bidirectional buck-boost converter plays a pivotal role in efficiently trans
 The EV battery pack represents the target battery for charging. It adheres to standard specifications suitable for real-world EV applications. The charger's design ensures compatibility with diverse EV models, accommodating different battery capacities and configurations prevalent in the market.
 #### 4. Control Circuit:
 The control circuit orchestrates the charging process by managing voltage, current, and control signals. It involves several key functions:
-###### Voltage Measurement: 
+Voltage Measurement: 
 Constant monitoring of the EV battery pack voltage to assess its state and determine the charging requirements.
-###### Comparison with Nominal Voltage: 
+Comparison with Nominal Voltage: 
 Comparing the measured EV battery pack voltage with the nominal battery voltage to establish charging needs.
-###### PI Controller: 
+PI Controller: 
 Utilizing a Proportional-Integral (PI) controller to generate a reference current based on the comparison of actual and nominal voltages. This reference current acts as the input for the current control circuit.
-###### Current Control Circuit: 
+Current Control Circuit: 
 Utilizing the reference current to regulate the duty cycle for the two Insulated Gate Bipolar Transistors (IGBTs) of the buck-boost converter. This ensures precise control of the charging current, optimizing the charging process while maintaining safety and efficiency.
 #### 5. Safety Features:
 Embedded safety features constitute a critical aspect of the charger's design. Overcurrent protection prevents damage by curbing excessive current flow. Overvoltage protection safeguards against voltage spikes, ensuring the charging process's safety. Moreover, the charger incorporates short-circuit protection, promptly detecting and mitigating short-circuit situations to prevent potential hazards, ensuring a secure charging environment.
