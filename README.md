@@ -11,27 +11,20 @@ This project's significance lies not only in its technological innovation but al
 
 ## 2. Portable Charger Design
 #### 1. Charger Battery Pack:
-Purpose: Serves as the primary power source for the portable charger.
-Component: High-capacity Li-ion battery pack enabling on-the-go charging without reliance on fixed power sources.
-Function: Stores energy required for charging electric vehicles, ensuring portability and autonomy.
-#### 2. Bidirectional Buck-Boost Converter:
-Purpose: Facilitates bidirectional energy transfer between the charger battery pack and the EV battery.
-Function: Regulates voltage levels for efficient charging/discharging.
-Modes:
-Charge Mode: Draws power from the charger battery pack to charge the EV battery.
-Discharge Mode: Allows energy transfer from the EV battery back to the charger battery pack when the EV is not actively charging, optimizing energy recovery.
-#### 3. Electric Vehicle (EV) Battery Pack:
-Purpose: Represents the target battery for charging, adhering to standard specifications for real-world EV applications.
-Component: Diverse configurations to accommodate different EV models and battery capacities prevalent in the market.
-Compatibility: Designed to ensure compatibility with varying EV battery configurations.
+The Li-ion battery pack serves as the primary power source for the portable charger. Its higher capacity allows for sufficient energy storage to facilitate the charging of electric vehicles. This component ensures portability and autonomy, enabling on-the-go charging without reliance on fixed power sources.
+#### 2. Buck-Boost Converter:
+The bidirectional buck-boost converter plays a pivotal role in efficiently transferring energy between the charger battery pack and the electric vehicle's battery. It regulates voltage levels, allowing seamless charging in both directions—either supplying power from the charger battery to the EV battery or recuperating energy from the EV back to the charger battery. Its bidirectional functionality optimizes the charging process for varying voltage scenarios.
+#### 3. EV Battery Pack:
+The EV battery pack represents the target battery for charging. It adheres to standard specifications suitable for real-world EV applications. The charger's design ensures compatibility with diverse EV models, accommodating different battery capacities and configurations prevalent in the market.
 #### 4. Control Circuit:
-Purpose: Manages and regulates the charging process by controlling voltage, current, and control signals.
-Functions:
-Voltage Measurement: Constantly monitors EV battery pack voltage to assess its state and charging requirements.
-Comparison with Nominal Voltage: Compares measured EV battery voltage with nominal values to determine charging needs.
-PI Controller: Utilizes a Proportional-Integral (PI) controller to generate reference current based on voltage comparisons.
-Current Control Circuit: Regulates the duty cycle for the two Insulated Gate Bipolar Transistors (IGBTs) of the buck-boost converter based on the reference current. This ensures precise control of charging current, optimizing efficiency and safety.
+The control circuit orchestrates the charging process by managing voltage, current, and control signals. It involves several key functions:
+###### Voltage Measurement: 
+Constant monitoring of the EV battery pack voltage to assess its state and determine the charging requirements.
+###### Comparison with Nominal Voltage: 
+Comparing the measured EV battery pack voltage with the nominal battery voltage to establish charging needs.
+###### PI Controller: 
+Utilizing a Proportional-Integral (PI) controller to generate a reference current based on the comparison of actual and nominal voltages. This reference current acts as the input for the current control circuit.
+###### Current Control Circuit: 
+Utilizing the reference current to regulate the duty cycle for the two Insulated Gate Bipolar Transistors (IGBTs) of the buck-boost converter. This ensures precise control of the charging current, optimizing the charging process while maintaining safety and efficiency.
 #### 5. Safety Features:
-Overcurrent Protection: Prevents excessive current flow, safeguarding components from damage.
-Overvoltage Protection: Safeguards against high voltage spikes, ensuring safety during the charging process.
-Short-Circuit Protection: Detects and mitigates short-circuit situations, preventing potential hazards
+Embedded safety features constitute a critical aspect of the charger's design. Overcurrent protection prevents damage by curbing excessive current flow. Overvoltage protection safeguards against voltage spikes, ensuring the charging process's safety. Moreover, the charger incorporates short-circuit protection, promptly detecting and mitigating short-circuit situations to prevent potential hazards, ensuring a secure charging environment.
